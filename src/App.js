@@ -6,6 +6,7 @@ import Main from './ContextApi/Main';
 import Nav from './Navigation/Nav';
 import Page404 from './pages/404';
 import About from './pages/About';
+import Admin from './pages/Admin';
 import Contact from './pages/Contact';
 import FeatureProducts from './pages/FeatureProducts';
 import Gallary from './pages/Gallary';
@@ -60,6 +61,7 @@ function App() {
 
         <Route path="users" element={<Users /> }/>
         <Route path="users/:userId" element={<UserDetails /> }/>
+        <Route path="users/admin" element={<Admin /> }/>
 
 
 

@@ -47,6 +47,14 @@ Note : index routes always used in route componets /
         </Route>\
 
 ### Dynamic Routes 
+  #### When more than two pages is needed then we used in dynamic routing .
+  * Example : normal way
+         <Route path="users" element={<Users /> }/>/
+         <Route path="users/:userId" element={<UserDetails /> }/>/
+  * if used in user/name is working when user/anyname is not match when it is working if some dynamic name is matched then used in 2nd way
+         <Route path="users" element={<Users /> }/>/
+         <Route path="users/:userId" element={<UserDetails /> }/>/
+         <Route path="users/admin" element={<Admin /> }/>/
 
 
 
