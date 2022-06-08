@@ -24,19 +24,27 @@ step 1 : create link in parent pages and setup the bottom in <outlet /> because 
 step 2 : put it in route section in nestedly \
 step 3: done \
 code in link :\
-            <nav style={{padding:'10px',display:'flex'}}>
-                <Link to="feature" style={{textDecoration:'none',padding:'7px'}}>Featured</Link>
-                <Link to="new" style={{textDecoration:'none',padding:'7px'}}>New</Link>
+            <nav style={{padding:'10px',display:'flex'}}>\
+                <Link to="feature" style={{textDecoration:'none',padding:'7px'}}>Featured</Link>\
+                <Link to="new" style={{textDecoration:'none',padding:'7px'}}>New</Link>\
             </nav>\
 
             <Outlet />\
 code in main :\ 
-        <Route path="products" element={<Products /> } >
-            <Route path="feature" element={<FeatureProducts />}/>
-            <Route path="new" element={<NewProducts />}/>
+        <Route path="products" element={<Products /> } >\
+            <Route path="feature" element={<FeatureProducts />}/>\
+            <Route path="new" element={<NewProducts />}/>\
         </Route>\
 
-### `npm run eject`
+### Index Routing 
+
+It is used as nested routing ,,, it's speciallity is  when we go to the nested pages (products pages ) after click we see the feture and new products but we want to see ,,that among two products one is automaticcay shown ,,,in that case we use index route .../ 
+Note : index routes always used in route componets /
+        <Route path="products" element={<Products /> } >\
+           <Route index element={<FeatureProducts />} />
+            <Route path="feature" element={<FeatureProducts />}/>\
+            <Route path="new" element={<NewProducts />}/>\
+        </Route>\
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

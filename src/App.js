@@ -49,6 +49,7 @@ function App() {
         <Route path="gallary" element={<Gallary /> }/>
 
         <Route path="products" element={<Products /> } >
+            <Route index element={<NewProducts />}/>
             <Route path="feature" element={<FeatureProducts />}/>
             <Route path="new" element={<NewProducts />}/>
         </Route>
