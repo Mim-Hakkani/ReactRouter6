@@ -59,10 +59,16 @@ function App() {
 
         {/* dynamic routing */}
 
-        <Route path="users" element={<Users /> }/>
+        {/* <Route path="users" element={<Users /> }/>
         <Route path="users/:userId" element={<UserDetails /> }/>
-        <Route path="users/admin" element={<Admin /> }/>
+        <Route path="users/admin" element={<Admin /> }/> */}
 
+        {/* nested dynamic routing  */}
+
+      <Route path="users" element={<Users /> }>
+        <Route path=":userId" element={<UserDetails /> }/>
+        <Route path="admin" element={<Admin /> }/> 
+      </Route>
 
 
         <Route path="*" element={<Page404 /> }/>
