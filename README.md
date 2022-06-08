@@ -64,9 +64,21 @@ when i neen to dynamic id , then use this hook /
 * const {dynamic_name} = useParams()  // dynamic_name comes from dynamic Routes 
 
 
-### Code Splitting
+### Search Params 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+it is used for routing or many conditions  /
+import hooks from dom6/
+* import { Outlet, useSearchParams } from 'react-router-dom';
+
+inside the function declare the hook /
+*  const[searchParams ,setSearchParams]=useSearchParams() 
+
+get its key value and compare it /
+*  const data = searchParams.get('filter')==='active';
+
+render it in jsx /
+*  <button onClick={()=>setSearchParams({filter:'active'})}>Active Users </button>
+
 
 ### Analyzing the Bundle Size
 
