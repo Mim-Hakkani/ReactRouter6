@@ -7,8 +7,10 @@ import Nav from './Navigation/Nav';
 import Page404 from './pages/404';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import FeatureProducts from './pages/FeatureProducts';
 import Gallary from './pages/Gallary';
 import Home from './pages/Home';
+import NewProducts from './pages/NewProducts';
 import Products from './pages/Products';
 
 const datas =[
@@ -41,12 +43,17 @@ function App() {
       <Nav/>
       <Routes>
         <Route path='/' />
-        <Route path='/home'        element={<Home/>} />
-        <Route path='/about'   element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path="/gallary" element={<Gallary /> }/>
-        <Route path="products" element={<Products /> }/>
-        <Route path="*" element={<Page404 /> }/>
+        <Route path='home'    element={<Home/>} />
+        <Route path='about'   element={<About/>} />
+        <Route path='contact' element={<Contact/>} />
+        <Route path="gallary" element={<Gallary /> }/>
+
+        <Route path="products" element={<Products /> } >
+            <Route path="feature" element={<FeatureProducts />}/>
+            <Route path="new" element={<NewProducts />}/>
+        </Route>
+
+        {/* <Route path="*" element={<Page404 /> }/> */}
       </Routes>
      </BrowserRouter>
 
