@@ -26,15 +26,9 @@ function App() {
       <Main />
      </ContextValue.Provider>
 
-     {/* the example of reaact router 
+     {/* the example of reaact router */}
      
-     git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/MimHakknai/ReactRouter6.git
-git push -u origin main
-     */}
+
      
    </div>
   );
