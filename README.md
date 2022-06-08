@@ -58,11 +58,11 @@ Note : index routes always used in route componets /
 
 
 
-## Learn More
+## Use params 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+when i neen to dynamic id , then use this hook /
+* const {dynamic_name} = useParams()  // dynamic_name comes from dynamic Routes 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
