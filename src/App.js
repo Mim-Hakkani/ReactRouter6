@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallary from './pages/Gallary';
 import Home from './pages/Home';
+import Products from './pages/Products';
 
 const datas =[
   {
@@ -44,6 +45,7 @@ function App() {
         <Route path='/about'   element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path="/gallary" element={<Gallary /> }/>
+        <Route path="products" element={<Products /> }/>
         <Route path="*" element={<Page404 /> }/>
       </Routes>
      </BrowserRouter>
