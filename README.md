@@ -1,23 +1,22 @@
-# Getting Started with Create React App
+# Getting Started React Router 6
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live link : 
 
-## Available Scripts
+## step 1
 
-In the project directory, you can run:
+install react router version 6 ,,read documentation ,,,lets Go ..
 
-### `npm start`
+### step 2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+create a navagition page and add Link used react router and give some styles simple 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  step 3
 
-### `npm test`
+use and import browseRouter ,routes , route from react-router-6 and add the navigation in browser router ,,, and also add the compoent in in Route path and element section ...with 404 pages also
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<Route path="/" element={<ComponentName/>}>
+
+
 
 ### `npm run build`
 
