@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { ContextValue } from './ContextApi/Context/Context';
 import Main from './ContextApi/Main';
+import Nav from './Navigation/Nav';
 
 const datas =[
   {
@@ -28,6 +30,10 @@ function App() {
 
      {/* the example of reaact router */}
      
+     
+     <BrowserRouter>
+      <Nav/>
+     </BrowserRouter>
 
      
    </div>
