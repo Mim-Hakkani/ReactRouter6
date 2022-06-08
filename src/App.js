@@ -4,6 +4,7 @@ import './App.css';
 import { ContextValue } from './ContextApi/Context/Context';
 import Main from './ContextApi/Main';
 import Nav from './Navigation/Nav';
+import Page404 from './pages/404';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallary from './pages/Gallary';
@@ -43,6 +44,7 @@ function App() {
         <Route path='/about'   element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path="/gallary" element={<Gallary /> }/>
+        <Route path="*" element={<Page404 /> }/>
       </Routes>
      </BrowserRouter>
 
