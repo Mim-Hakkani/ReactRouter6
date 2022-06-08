@@ -10,6 +10,7 @@ const Nav = () => {
                 <li><Link to="contact" style={{textDecoration:'none',padding:'7px'}}>Contact</Link></li>
                 <li><Link to="gallary" style={{textDecoration:'none',padding:'7px'}}>Gallary</Link></li>
                  <li><Link to="products" style={{textDecoration:'none',padding:'7px'}}>Products</Link></li>
+                 <li><Link to="users" style={{textDecoration:'none',padding:'7px'}}>Users</Link></li>
             </ul>
         </div>
     );

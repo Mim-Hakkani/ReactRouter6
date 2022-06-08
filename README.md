@@ -34,11 +34,11 @@ code in main :\
         <Route path="products" element={<Products /> } >\
             <Route path="feature" element={<FeatureProducts />}/>\
             <Route path="new" element={<NewProducts />}/>\
-        </Route>\
+        </Route>
 
 ### Index Routing 
 
-It is used as nested routing ,,, it's speciallity is  when we go to the nested pages (products pages ) after click we see the feture and new products but we want to see ,,that among two products one is automaticcay shown ,,,in that case we use index route .../ 
+It is used as nested routing ,,, it's speciallity is  when we go to the nested pages (products pages ) after click we see the feture and new products but we want to see ,,that among two products one is automaticcay shown ,,,in that case we use index route ...<br/>
 Note : index routes always used in route componets /
         <Route path="products" element={<Products /> } >\
            <Route index element={<FeatureProducts />} />
@@ -46,13 +46,9 @@ Note : index routes always used in route componets /
             <Route path="new" element={<NewProducts />}/>\
         </Route>\
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Dynamic Routes 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 

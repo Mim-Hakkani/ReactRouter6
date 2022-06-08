@@ -12,6 +12,8 @@ import Gallary from './pages/Gallary';
 import Home from './pages/Home';
 import NewProducts from './pages/NewProducts';
 import Products from './pages/Products';
+import UserDetails from './pages/UserDetails';
+import Users from './pages/Users';
 
 const datas =[
   {
@@ -54,7 +56,14 @@ function App() {
             <Route path="new" element={<NewProducts />}/>
         </Route>
 
-        {/* <Route path="*" element={<Page404 /> }/> */}
+        {/* dynamic routing */}
+
+        <Route path="users" element={<Users /> }/>
+        <Route path="users/:userId" element={<UserDetails /> }/>
+
+
+
+        <Route path="*" element={<Page404 /> }/>
       </Routes>
      </BrowserRouter>
 
