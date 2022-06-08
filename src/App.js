@@ -7,10 +7,13 @@ import Nav from './Navigation/Nav';
 import Page404 from './pages/404';
 import About from './pages/About';
 import Admin from './pages/Admin';
+import { AuthProvider, useAuth } from './pages/Auth';
 import Contact from './pages/Contact';
 import FeatureProducts from './pages/FeatureProducts';
 import Gallary from './pages/Gallary';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Logout from './pages/Logout';
 import NewProducts from './pages/NewProducts';
 import Products from './pages/Products';
 import Profile from './pages/Profile';
@@ -33,8 +36,10 @@ function App() {
 
   const [info,setInfo] =useState(datas)
 
+  const auth = useAuth();
+
   return (
-   <div>
+   <AuthProvider>
      {/* this section is used for contect api */}
      <ContextValue.Provider value={info} >
       <Main />
@@ -72,15 +77,18 @@ function App() {
       </Route>
 
         <Route path="profile" element={<Profile /> }/>
+     
+        <Route path="login" element={<Login /> }/> 
+        {/* <Route path="logout" element={<Logout /> }/>  */}
 
-
+      
 
         <Route path="*" element={<Page404 /> }/>
       </Routes>
      </BrowserRouter>
 
      
-   </div>
+   </AuthProvider>
   );
 }
 
