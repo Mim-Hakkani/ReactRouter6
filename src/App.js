@@ -13,6 +13,7 @@ import Gallary from './pages/Gallary';
 import Home from './pages/Home';
 import NewProducts from './pages/NewProducts';
 import Products from './pages/Products';
+import Profile from './pages/Profile';
 import UserDetails from './pages/UserDetails';
 import Users from './pages/Users';
 
@@ -69,6 +70,9 @@ function App() {
         <Route path=":userId" element={<UserDetails /> }/>
         <Route path="admin" element={<Admin /> }/> 
       </Route>
+
+        <Route path="profile" element={<Profile /> }/>
+
 
 
         <Route path="*" element={<Page404 /> }/>

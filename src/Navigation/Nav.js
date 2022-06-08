@@ -11,6 +11,7 @@ const Nav = () => {
                 <li><Link to="gallary" style={{textDecoration:'none',padding:'7px'}}>Gallary</Link></li>
                  <li><Link to="products" style={{textDecoration:'none',padding:'7px'}}>Products</Link></li>
                  <li><Link to="users" style={{textDecoration:'none',padding:'7px'}}>Users</Link></li>
+                 <li><Link to="profile" style={{textDecoration:'none',padding:'7px'}}>Profile</Link></li>
             </ul>
         </div>
     );
