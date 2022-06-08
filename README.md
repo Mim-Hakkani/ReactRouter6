@@ -19,23 +19,23 @@ use and import browseRouter ,routes , route from react-router-6 and add the navi
 
 
 ### working with nested routes  
-This example is shown by products routes 
-step 1 : create link in parent pages and setup the bottom in <outlet /> because this is the parent section.
-step 2 : put it in route section in nestedly 
-step 3: done 
-code in link : 
+This example is shown by products routes \
+step 1 : create link in parent pages and setup the bottom in <outlet /> because this is the parent section.\
+step 2 : put it in route section in nestedly \
+step 3: done \
+code in link :\
             <nav style={{padding:'10px',display:'flex'}}>
                 <Link to="feature" style={{textDecoration:'none',padding:'7px'}}>Featured</Link>
                 <Link to="new" style={{textDecoration:'none',padding:'7px'}}>New</Link>
-            </nav>
+            </nav>\
 
-            <Outlet />
-code in main : 
+            <Outlet />\
+code in main :\ 
         <Route path="products" element={<Products /> } >
             <Route path="feature" element={<FeatureProducts />}/>
             <Route path="new" element={<NewProducts />}/>
-        </Route>
-        
+        </Route>\
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
